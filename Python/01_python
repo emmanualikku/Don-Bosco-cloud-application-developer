@@ -1,0 +1,38 @@
+1##Writ a programme that takes a list of strings as input from the user & then create 2 new list, 1 containing strings that start w/ a vowel & another containing thre strings that start w/ a consonant:
+a) a=input("enter the characters ")
+b=a.split()
+wow="aeuouAEIOU"
+c=[]
+d=[]
+for i in b:
+    if i[0] in wow:
+        c.append(i)
+    else:
+        d.append(i)
+print(c)
+print(d)
+
+b) num_element=int(input("Enter : "))
+vowels=[]
+consonants=[]
+for i in range(num_element):
+    string=input("Enter : ")
+    if string[0] in "aeiouAEIOU":
+        vowels.append(string)
+    else:
+        consonants.append(string)
+print(vowels)
+print(consonants)
+
+#Write a programme that takes a list of string as inpiut from the user & seperate them into 2 lists, 1 containing string length of 5 or more & another string containing less than 5.
+pg=int(input("Enter a num.: "))
+ls=[]
+gr=[]
+for i in range(pg):
+    x=input("Enter a no.: ")
+    if len(x)>=5:
+        ls.append(x)
+    else:
+        gr.append(x)
+print(ls)
+print(gr)
