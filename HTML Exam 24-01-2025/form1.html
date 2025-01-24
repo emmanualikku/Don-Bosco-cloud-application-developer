@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form 1</title>
+    <script>
+        function thankYouMessage() {
+            alert("Thank you for submitting the form!");
+        }
+    </script>
+</head>
+<body>
+    <h2>Form 1</h2>
+    <form action="/submit1" method="post" onsubmit="thankYouMessage()">
+        <label for="name1">Name:</label><br>
+        <input type="text" id="name1" name="name1"><br><br>
+        <label for="email1">Email:</label><br>
+        <input type="email" id="email1" name="email1"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
